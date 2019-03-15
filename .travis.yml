@@ -11,3 +11,5 @@ after_success:
 cache:
   directories:
     - '$HOME/.m2/repository'
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
